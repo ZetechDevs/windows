@@ -14,6 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4314.35" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="icons8-user-default-96.png" />
     <Resource Include="macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-3840x2160-1455.jpg" />
   </ItemGroup>

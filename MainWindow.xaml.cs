@@ -19,6 +19,7 @@ namespace uipracticewin
         public MainWindow()
         {
             InitializeComponent();
+            webBrowser.Navigate("https://duckduckgo.com");
         }
     }
 }
