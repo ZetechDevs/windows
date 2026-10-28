@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uipracticewin"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800" Foreground="#FFDE1D1D">
+        Title="Login" Height="450" Width="800" Foreground="#FFDE1D1D">
     <Window.Background>
         <ImageBrush ImageSource="/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-3840x2160-1455.jpg"/>
     </Window.Background>
@@ -19,7 +19,7 @@
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Left" Margin="322,11,0,0" TextWrapping="Wrap" Text="SING IN" VerticalAlignment="Top" Height="48" Width="236" Foreground="#FFFFFEFE" FontSize="36" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed Extra Bold">
+        <TextBlock HorizontalAlignment="Left" Margin="322,11,0,0" TextWrapping="Wrap" Text="SIGN IN" VerticalAlignment="Top" Height="48" Width="236" Foreground="#FFFFFEFE" FontSize="36" RenderTransformOrigin="0.5,0.5" FontFamily="Tw Cen MT Condensed Extra Bold">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,11 +35,71 @@
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Left" Margin="231,217,0,0" TextWrapping="Wrap" Text="Username :" VerticalAlignment="Top" Foreground="#FFFBFBFB" FontWeight="Bold" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="231,261,0,0" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top" Foreground="#FFFBFBFB" FontWeight="Bold" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Margin="332,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFF9F4F4"/>
-        <TextBox HorizontalAlignment="Left" Margin="331,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFF9F4F4"/>
-        <Button Content="Button"  HorizontalAlignment="Left" Margin="326,305,0,0" VerticalAlignment="Top" Width="125" Background="#FF7413ED" Foreground="#FFFFF9F9" FontSize="14" FontWeight="Bold"/>
-
+        <TextBlock
+            HorizontalAlignment="Left"
+            Margin="231,217,0,0"
+            TextWrapping="Wrap"
+            Text="Username :"
+            VerticalAlignment="Top"
+            Foreground="#FFFBFBFB"
+            FontWeight="Bold" FontSize="14"/>
+        <TextBlock
+            HorizontalAlignment="Left"
+            Margin="231,261,0,0"
+            TextWrapping="Wrap"
+            Text="Password :"
+            VerticalAlignment="Top"
+            Foreground="#FFFBFBFB"
+            FontWeight="Bold" FontSize="14"/>
+        <TextBox
+            x:Name="UsernameTextBox"
+            HorizontalAlignment="Left"
+            Margin="332,218,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Width="120"
+            Background="{x:Null}"
+            Foreground="#FFF9F4F4"/>
+        <PasswordBox
+            x:Name="PasswordBox"
+            HorizontalAlignment="Left"
+            Margin="331,261,0,0"
+            VerticalAlignment="Top"
+            Width="120"
+            Background="{x:Null}"
+            Foreground="#FFF9F4F4"/>
+        <Button
+            x:Name="LoginButton"
+            Content="LOGIN"
+            HorizontalAlignment="Left"
+            Margin="326,305,0,0"
+            VerticalAlignment="Top"
+            Width="125"
+            Background="#FF7413ED"
+            Foreground="#FFFFF9F9"
+            FontSize="14"
+            FontWeight="Bold"
+            Click="LoginButton_Click"/>
+        <Button
+            x:Name="RegisterButton"
+            Content="SIGN UP"
+            HorizontalAlignment="Left"
+            Margin="470,305,0,0"
+            VerticalAlignment="Top"
+            Width="125"
+            Background="#FF7413ED"
+            Foreground="#FFFFF9F9"
+            FontSize="14"
+            FontWeight="Bold"
+            Click="RegisterButton_Click"/>
+        <TextBlock
+            x:Name="ErrorMessage"
+            HorizontalAlignment="Left"
+            Margin="231,330,0,0"
+            TextWrapping="Wrap"
+            Foreground="Red"
+            FontSize="12"
+            Height="50"
+            Width="359"/>
     </Grid>
 </Window>

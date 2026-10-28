@@ -19,14 +19,16 @@
         <TextBlock HorizontalAlignment="Left" Margin="234,134,0,0" TextWrapping="Wrap" Text="First name" VerticalAlignment="Top" Height="27" Width="84" Foreground="White" FontSize="14" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="234,287,0,0" TextWrapping="Wrap" Text="phone no" VerticalAlignment="Top" Height="27" Width="84" Foreground="White" FontSize="14" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="234,242,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Height="28" Width="84" Foreground="White" FontSize="14" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="234,190,0,0" TextWrapping="Wrap" Text="Second name" VerticalAlignment="Top" Height="27" Width="105" Foreground="White" FontSize="14" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="234,332,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Height="27" Width="84" Foreground="White" FontSize="14" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="392,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Margin="400,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Margin="400,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
-        <TextBox HorizontalAlignment="Left" Margin="400,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="400,332,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBEFEF" Height="27"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="355,375,0,0" VerticalAlignment="Top" Height="26" Width="137" Background="#FF6712EA" Foreground="White" FontWeight="Bold" FontSize="14"/>
-
+        <TextBlock HorizontalAlignment="Left" Margin="234,190,0,0" TextWrapping="Wrap" Text="Last name" VerticalAlignment="Top" Height="27" Width="105" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="234,332,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Height="27" Width="84" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        
+        <TextBox x:Name="FirstNameBox" HorizontalAlignment="Left" Margin="392,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
+        <TextBox x:Name="LastNameBox" HorizontalAlignment="Left" Margin="400,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
+        <TextBox x:Name="UsernameBox" HorizontalAlignment="Left" Margin="400,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
+        <TextBox x:Name="PhoneBox" HorizontalAlignment="Left" Margin="400,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBFBFB" FontSize="14"/>
+        <PasswordBox x:Name="PasswordBoxReg" HorizontalAlignment="Left" Margin="400,332,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="#FFFBEFEF" Height="27"/>
+        
+        <Button x:Name="SignUpButton" Content="Sign Up" HorizontalAlignment="Left" Margin="355,375,0,0" VerticalAlignment="Top" Height="26" Width="137" Background="#FF6712EA" Foreground="White" FontWeight="Bold" FontSize="14" Click="SignUpButton_Click"/>
+        <TextBlock x:Name="RegistrationError" HorizontalAlignment="Left" Margin="234,415,0,0" TextWrapping="Wrap" Foreground="Red" FontSize="12" Height="30" Width="350"/>
     </Grid>
 </Window>
