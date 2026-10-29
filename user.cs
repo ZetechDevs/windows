@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace uipracticewin
+﻿namespace uipracticewin
 {
     public class User
     {
