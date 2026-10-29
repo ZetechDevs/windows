@@ -32,3 +32,4 @@
         <TextBlock x:Name="RegistrationError" HorizontalAlignment="Left" Margin="234,415,0,0" TextWrapping="Wrap" Foreground="Red" FontSize="12" Height="30" Width="350"/>
     </Grid>
 </Window>
+    
