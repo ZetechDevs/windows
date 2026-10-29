@@ -1,4 +1,14 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace uipracticewin
 {
@@ -20,7 +30,7 @@ namespace uipracticewin
             string phoneNumber = PhoneBox.Text;
             string password = PasswordBoxReg.Password;
 
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) ||
+            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || 
                 string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 RegistrationError.Text = "Please fill in all required fields";
@@ -45,7 +55,7 @@ namespace uipracticewin
 
             App.RegisteredUsers.Add(newUser);
             RegistrationError.Text = "Registration successful! Please login.";
-
+            
             this.Close();
         }
     }

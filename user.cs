@@ -1,4 +1,6 @@
-﻿namespace uipracticewin
+﻿using System;
+
+namespace uipracticewin
 {
     public class User
     {
