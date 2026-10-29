@@ -12,7 +12,7 @@ using System.Windows.Shapes;
 
 namespace uipracticewin
 {
-    /// <summary>
+    /// <summary projectwin>
     /// Interaction logic for Window1.xaml
     /// </summary>
     public partial class Window1 : Window
